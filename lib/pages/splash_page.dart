@@ -15,15 +15,16 @@ class SplashPage extends StatelessWidget {
               width: 80,
               height: 80,
               decoration: BoxDecoration(
-                  image: DecorationImage(image: AssetImage('images/logo.png'))),
+                  image: DecorationImage(
+                      image: AssetImage('assets/images/logo.png'))),
             ),
             SizedBox(height: 96),
             Container(
               width: 267,
               height: 200,
               decoration: BoxDecoration(
-                  image:
-                      DecorationImage(image: AssetImage('images/Scenes.png'))),
+                  image: DecorationImage(
+                      image: AssetImage('assets/images/Scenes.png'))),
             ),
             SizedBox(height: 52),
             Text(

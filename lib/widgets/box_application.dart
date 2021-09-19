@@ -8,7 +8,7 @@ class BoxApplication extends StatelessWidget {
   final String borderColor;
 
   BoxApplication(
-      {this.image = "images/fruits.png",
+      {this.image = "assets/images/fruits.png",
       this.caption = "Loremipsum",
       this.color = "0x1A53B175",
       this.borderColor = "0xff53B175"});
@@ -30,10 +30,12 @@ class BoxApplication extends StatelessWidget {
               height: 74.9,
               decoration: BoxDecoration(
                   image: DecorationImage(image: AssetImage(image)))),
-          Text(
-            caption,
-            style:
-                textBlack.copyWith(fontSize: 16, fontWeight: FontWeight.w700),
+          Center(
+            child: Text(
+              caption,
+              style:
+                  textBlack.copyWith(fontSize: 16, fontWeight: FontWeight.w700),
+            ),
           )
         ],
       ),
